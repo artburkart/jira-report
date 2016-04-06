@@ -22,4 +22,5 @@ like `?rapidView=103&view=reporting&chart=burndownChart&sprint=287` where `287`
 is the value you're looking for.
 
 The "reports" button looks like this:
+
 ![reports button](reports.png)

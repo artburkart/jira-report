@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Simple, sample script for generating a markdown report."""
 
 from collections import defaultdict
@@ -6,9 +7,10 @@ from os import environ
 from sys import argv
 
 # Get JIRA configs
-options = {'server': environ['JIRA_DOMAIN']}
 username = environ['JIRA_USERNAME']
 password = environ['JIRA_PASSWORD']
+# Usually like "https://companyname.atlassian.net"
+options = {'server': environ['JIRA_DOMAIN']}
 
 # Authenticate with JIRA
 j = JIRA(options, basic_auth=(username, password))
